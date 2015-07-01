@@ -9,9 +9,15 @@
     "jasmine-sinon": "^0.4.0",
     "sinon": "^1.15.4"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "npm-watch": "0.0.0"
+  },
+  "watch": {
+    "test": "*.js"
+  },
   "scripts": {
-    "test": "jasmine-node bankapp.spec.js"
+    "test": "jasmine-node bankapp.spec.js",
+    "watch": "npm-watch"
   },
   "author": "Ethan McCreadie",
   "license": "ISC"
