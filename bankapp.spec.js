@@ -62,6 +62,7 @@ describe('when withdrawing funds', function() {
             expect(notify.calledWith('Your account has been overdrawn.'))
                 .toBeTruthy();
             expect(this.account.balance).toBe(25);
+            notify.restore();
         });
     });
 });
